@@ -36,6 +36,7 @@ def make_data_array_of_lists(data):
        list_of_data.append(make_row_a_list) # Add the sublist into list_of_data
    data = np.array(list_of_data) # Make the list of sublists into a array
    return data
+
 #Make a list of the countries for the chosen UN region
 def list_of_countries_in_region(region, country_data):
    ''' Function Summary:
@@ -53,6 +54,7 @@ def list_of_countries_in_region(region, country_data):
        get_country = country_data[index, 0] # Finds the country in the UN region using the row index and the first column in the country data (the names of all the countries)
        countries_in_region.append(get_country) # Adds the country name to the list of countries in the selected UN region
    return countries_in_region
+
 def list_of_subs_in_region(region, country_data):
    ''' Function Summary:
        A function that creates a list of the subregions within the selected region.
@@ -71,6 +73,7 @@ def list_of_subs_in_region(region, country_data):
        get_sub = country_data[index, 2] # Finds the sub-region in the region by using the row index and the second column in country_data.
        sub_regions_in_region.append(get_sub) # Adds name of sub-regions in the selected region to the list of sub regions
    return sub_regions_in_region
+
 def get_avg_pop_or_threatened(countries, data):
    ''' Function Summary:
        This function finds the average population or average threatened species for each country in the selected UN region, depending on the arguments that are passed in.
@@ -95,6 +98,7 @@ def get_avg_pop_or_threatened(countries, data):
        mean_calculation = int(np.mean((values_in_row))) # Gets the average of the values_in_row list without decimals
        mean_pop_or_threatened.append(mean_calculation) # Adds the average to the list
    return mean_pop_or_threatened
+
 #Main Function:
 def main():
    #Importing csv files
