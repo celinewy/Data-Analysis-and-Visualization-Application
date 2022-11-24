@@ -1,5 +1,4 @@
-#Group Members: Natalie Korczewski (30141977) and Celine Yeung (30144006)
-#Block 3
+#Group Members: Celine Yeung and Natalie Korczewski
 #A terminal-based data analysis and visualization program to allow users to search the number of threatened species and number of subregions in their chosen country 
 
 import matplotlib.pyplot as plt
